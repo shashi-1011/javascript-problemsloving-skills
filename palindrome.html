@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="root"></h1>
+    
+</body>
+<script>
+    function palindrome(string){
+        var revstirng = string.split("").reverse().join("")
+        if(revstirng === string)
+        return true;
+        return false; 
+    }
+   document.getElementById("root").innerHTML= palindrome("123");
+</script>
+</html>
